@@ -10,6 +10,8 @@ ul,ol{
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--body-bg);
+  color: var(--body-text);
 }
 
 img {
@@ -19,8 +21,18 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--body-text);
 }
-
+:root{
+  --body-bg:#fff;
+  --body-text:#22343D;
+  --logo-text:#173A56;
+}
+.dark-body{
+    --body-bg:#1F2E35;
+  --body-text:#fff;
+  --logo-text:#fff;
+}
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);

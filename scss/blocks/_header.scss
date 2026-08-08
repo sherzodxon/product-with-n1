@@ -1,0 +1,97 @@
+.header {
+    padding: 18px 0;
+    position: fixed;
+    background-color: var(--body-bg);
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+
+.header__sign {
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+    padding: 10px 23px 9px 25px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+     margin-right: 24px;
+}
+.header__nav-login{
+    border-color: #BCD0E5;
+}
+.header__nav-sign{
+    background-color: $green;
+    color: #fff;
+    border-color: $green;
+}
+.header__nav-theme{
+    width: 32px;
+    height: 32px;
+    background-color: #F3F3F3;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(../../img/theme.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media only screen and (max-width:930px){
+    .header__nav{
+        display: none;
+    }
+    .header__nav-mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 73px;
+        width: 60%;
+        padding: 20px;
+        background-color: var(--body-text);
+        right: 0;
+        height: calc(100vh - 73px);
+        .header__list{
+         width: 100%;
+         flex-direction: column;
+         margin: 0;
+         margin-bottom: 24px;
+         margin-top: 40px;
+        }
+        .header__item-link{
+            color: var(--body-bg);
+        }
+        .header__nav-login{
+            color: var(--body-bg);
+        }
+        .header__sign{
+            margin: 0;
+            margin-bottom: 24px;
+            
+        }
+        .header__nav-auth{
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header__item{
+            margin-bottom: 24px;
+        }
+    }
+}
