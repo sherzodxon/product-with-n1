@@ -1,0 +1,14 @@
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo__img{
+    margin-right: 16px;
+}
+.logo__text{
+font-weight: 700;
+font-size: 30px;
+line-height: 28px;
+letter-spacing: 0px;
+color: var(--logo-text);
+}
