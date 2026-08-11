@@ -408,7 +408,7 @@ a {
 
 .header {
   padding: 18px 0;
-  position: fixed;
+  top: 0px;
   background-color: var(--body-bg);
   width: 100%;
 }
@@ -549,4 +549,77 @@ a {
   .hamburger {
     display: block;
   }
+}
+.quick__container {
+  background-image: url("../../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1100px 500px;
+}
+
+.quick__textbox {
+  text-align: center;
+}
+
+.quick__test {
+  width: 542px;
+  margin: 0 auto;
+}
+
+.quick__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 1;
+}
+.quick__content .quick__think {
+  background-image: url("../../img/thinking.png");
+  background-repeat: no-repeat;
+  margin-left: 150px;
+  z-index: 0;
+}
+
+.quick__coment {
+  position: relative;
+  width: 388px !important;
+  height: 120px;
+}
+.quick__coment:first-child {
+  display: inline;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: " ";
+  background-image: url("../../img/woman.png");
+  background-repeat: no-repeat;
+  margin-left: 200px;
+}
+.quick__coment:nth-child(2) {
+  display: inline;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: " ";
+  background-image: url("../../img/boy.png");
+  background-repeat: no-repeat;
+}
+.quick__coment:nth-child(3) {
+  display: inline;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: " ";
+  background-image: url("../../img/man.png");
+  background-repeat: no-repeat;
+}
+.quick__coment:last-child {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: " ";
+  background-image: url("../../img/old.png");
+  background-repeat: no-repeat;
+  margin-left: 600px;
 }/*# sourceMappingURL=main.css.map */
