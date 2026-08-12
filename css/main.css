@@ -411,6 +411,7 @@ a {
   position: fixed;
   background-color: var(--body-bg);
   width: 100%;
+  top: 0;
 }
 
 .header__container {
@@ -548,5 +549,129 @@ a {
 @media only screen and (max-width: 930px) {
   .hamburger {
     display: block;
+  }
+}
+.benefits {
+  margin: 150px 0;
+}
+
+.benefits__item {
+  margin-bottom: 146px;
+}
+
+.benefits__contant {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.benefits__item--reverse .benefits__contant {
+  flex-direction: row-reverse;
+}
+.benefits__item--reverse .benefits__contant .benefits__item-texts {
+  margin-right: 0;
+  margin-left: 94px;
+}
+
+.benefits__item-texts {
+  width: 486px;
+  margin-right: 84px;
+}
+
+.benefits__item-first-title {
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--body-text);
+  margin-bottom: 10px;
+}
+
+.benefits__item-second-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: var(--body-text);
+  margin-bottom: 23px;
+}
+
+.benefits__item-first-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: var(--body-text);
+  margin-bottom: 12px;
+}
+
+.benefits__item-second-text {
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: var(--body-text);
+  margin-bottom: 25px;
+}
+
+.benefits__item-text {
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: var(--body-text);
+}
+
+.benefits__item-text--margin {
+  margin-bottom: 30px;
+}
+
+.benefits__item-contant {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.benefits__item-icon {
+  padding: 8px 0;
+  margin-right: 30px;
+}
+
+.benefits--mobile {
+  display: none;
+  margin: 150px 0;
+}
+
+.benefits__contant--mobile {
+  margin: 0 auto;
+}
+
+.benefits__item--mobile {
+  margin-bottom: 150px;
+}
+
+.benefits__item-img--mobile {
+  margin-bottom: 50px;
+}
+
+.benefits__item-contant--mobile {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .benefits {
+    display: none;
+  }
+  .benefits--mobile {
+    display: block;
+  }
+  .benefits__contant--mobile {
+    max-width: 500px;
+    padding: 0 10px;
+  }
+  .benefits__img-and-text-mobile {
+    display: flex;
+    max-width: 35px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 465px) {
+  .benefits__item-text--mobile {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=main.css.map */
