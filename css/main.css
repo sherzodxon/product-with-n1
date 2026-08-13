@@ -371,6 +371,9 @@ a {
   --body-text:#fff;
   --logo-text:#fff;
 }
+.dark-body .product {
+  background-image: url(../img/Bg-dark.png);
+}
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -554,6 +557,7 @@ a {
   padding: 80px 20px 120px;
   text-align: center;
   background-image: url("../img/Bg.png");
+  color: var(--body-bg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% auto;
@@ -571,7 +575,7 @@ a {
 .product__title {
   font-size: 32px;
   font-weight: 700;
-  color: #2F281E;
+  color: var(--body-text);
   max-width: 500px;
   margin: 0 auto 50px;
   line-height: 1.3;
@@ -640,13 +644,13 @@ a {
 .product__card-title {
   font-size: 18px;
   font-weight: 600;
-  color: #2F281E;
+  color: var(--body-text);
   margin-bottom: 12px;
 }
 .product__card-desc {
   font-size: 14px;
   line-height: 1.6;
-  color: #544837;
+  color: var(--body-text);
   margin: 0;
 }
 .product__action {
