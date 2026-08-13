@@ -32,6 +32,9 @@ a {
     --body-bg:#1F2E35;
   --body-text:#fff;
   --logo-text:#fff;
+  .product{
+    background-image: url(../img/Bg-dark.png);
+  }
 }
 .visually-hidden {
   clip: rect(0 0 0 0);
