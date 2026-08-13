@@ -1,6 +1,7 @@
 $primary-text: #2F281E;
 $secondary-text: #544837;
 $btn-bg: #02897A;
+
 $btn-hover: #026f63;
 
 $color-green: #02897A;
@@ -13,6 +14,7 @@ $color-red: #F04037;
   text-align: center;
   
   background-image: url('../img/Bg.png');
+  color: var(--body-bg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% auto;
@@ -30,7 +32,7 @@ $color-red: #F04037;
   &__title {
     font-size: 32px;
     font-weight: 700;
-    color: $primary-text;
+    color: var(--body-text);
     max-width: 500px;
     margin: 0 auto 50px;
     line-height: 1.3;
@@ -93,14 +95,14 @@ $color-red: #F04037;
   &__card-title {
     font-size: 18px;
     font-weight: 600;
-    color: $primary-text;
+    color: var(--body-text);
     margin-bottom: 12px;
   }
 
   &__card-desc {
     font-size: 14px;
     line-height: 1.6;
-    color: $secondary-text;
+    color: var(--body-text);
     margin: 0;
   }
 
