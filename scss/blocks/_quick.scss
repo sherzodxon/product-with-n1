@@ -2,70 +2,193 @@
     background-image: url("../../img/bg.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1100px 500px;
+    background-size: 1100px 550px;
+    display: flex;
+    flex-direction: column;
 }
 
 .quick__textbox {
+    color: var(--body-text);
     text-align: center;
 }
 
 .quick__test {
+    color: var(--body-text);
     width: 542px;
     margin: 0 auto;
 }
-.quick__content{
+
+.quick__coment {
+    color: var(--body-text);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 20px;
     z-index: 1;
-    .quick__think{
-        background-image: url("../../img/thinking.png");
+}
+
+.quick__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick__item {
+    width: 388px;
+    height: 120px;
+
+    &:first-child {
+        background-image: url(../../img/woman.png);
         background-repeat: no-repeat;
-        margin-left: 150px;
-        z-index: 0;
+        background-position: 40px;
+        background-size: 100px 100px;
+
+        .quick__think--woman {
+            margin-left: 150px;
+            border: 2px solid #5675921A;
+            padding: 25px 15px 24px 20px;
+            border-radius: 10px 10px 10px 0px;
+            width: 225px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+        }
+    }
+
+    &:last-child {
+        margin-top: 20px;
+        background-image: url(../../img/boy.png);
+        background-repeat: no-repeat;
+        background-position: 250px;
+        background-size: 100px 100px;
+
+        .quick__think--boy {
+            margin-right: 20px;
+            border: 2px solid #5675921A;
+            padding: 25px 15px 24px 20px;
+            border-radius: 10px 10px 0px 10px;
+            width: 225px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+        }
     }
 }
-.quick__coment{
-    position: relative;
-    width: 388px !important;
+
+.quick__item--second {
+    width: 388px;
     height: 120px;
-&:first-child{
-        display: inline;
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        content: " ";
-        background-image: url("../../img/woman.png");
+
+    &:first-child {
+        margin-right: 100px;
+        background-image: url(../../img/old.png);
         background-repeat: no-repeat;
-        margin-left: 200px;
+        background-position: 250px;
+        background-size: 100px 100px;
+
+        .quick__think--old {
+            margin-right: 180px;
+            border: 2px solid #5675921A;
+            padding: 25px 15px 24px 20px;
+            border-radius: 10px 10px 0px 10px;
+            width: 225px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+        }
     }
-    &:nth-child(2){
-        display: inline;
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        content: " ";
-        background-image: url("../../img/boy.png");
+
+    &:last-child {
+        margin-top: 20px;
+        background-image: url(../../img/man.png);
         background-repeat: no-repeat;
+        background-position: 0px;
+        background-size: 100px 100px;
+
+        .quick__think--man {
+            margin-left: 120px;
+            border: 2px solid #5675921A;
+            padding: 25px 15px 24px 20px;
+            border-radius: 10px 10px 10px 0px;
+            width: 225px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+        }
     }
-    &:nth-child(3){
-        display: inline;
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        content: " ";
-        background-image: url("../../img/man.png");
-        background-repeat: no-repeat;
+}
+
+.quick__button {
+    margin: 30px auto;
+    padding: 15px 30px;
+    border: 2px solid #02897A;
+    border-radius: 5px;
+    background-color: #02897A;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+@media only screen and (max-width: 994px) {
+    .quick__slogan{
+        margin-top: 290px;
     }
-    &:last-child{
-        display: flex;
-        flex-direction: row-reverse;
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        content: " ";
-        background-image: url("../../img/old.png");
-        background-repeat: no-repeat;
-        margin-left: 600px;
+
+    .quick__coment {
+        margin: 0 290px;
+        margin-top: 40px;
+    }
+
+}
+@media only screen and (max-width: 882px) {
+    .quick__coment {
+        margin: 0 250px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 807px) {
+    .quick__coment {
+        margin: 0 210px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 692px) {
+    .quick__coment {
+        margin: 0 150px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 578px) {
+    .quick__coment {
+        margin: 0 110px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .quick__coment {
+        margin: 0 60px;
+        margin-top: 40px;
+    }
+    .quick__test{
+        width: 338px;
+
+    }
+}
+@media only screen and (max-width: 455px) {
+    .quick__coment {
+        margin: 0 20px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 411px) {
+    .quick__coment {
+        margin: 0 0px;
+        margin-top: 40px;
     }
 }
