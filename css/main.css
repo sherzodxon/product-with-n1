@@ -364,6 +364,7 @@ a {
   --body-bg:#fff;
   --body-text:#22343D;
   --logo-text:#173A56;
+  --card-shadow: rgba(0, 0, 0, 0.08);
 }
 
 .dark-body {
@@ -373,6 +374,9 @@ a {
 }
 .dark-body .product {
   background-image: url(../img/Bg-dark.png);
+}
+.dark-body {
+  --card-shadow: rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -1084,4 +1088,123 @@ a {
     width: auto;
     justify-content: flex-end;
   }
+}
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  margin-top: 150px;
+  padding: 0 20px;
+  text-align: center;
+}
+.price__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  color: var(--body-text);
+}
+.price__paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--body-text);
+  margin: 8px auto 50px auto;
+}
+.price__list {
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.price__item {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  width: 328px;
+  padding: 40px 24px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.price__item--active {
+  background-color: #02897A;
+  color: #ffffff;
+  box-shadow: 0px 10px 20px rgba(2, 137, 122, 0.3);
+}
+.price__item--active .price__number,
+.price__item--active .price__currency,
+.price__item--active .price__period {
+  color: #ffffff;
+}
+.price__item-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.price__item-desc {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.price__amount-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.price__number {
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1;
+  color: #02897A;
+}
+.price__currency-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.price__currency {
+  font-size: 24px;
+  font-weight: 700;
+  color: #02897A;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.price__period {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--period-text);
+}
+.price__features {
+  padding: 0;
+  margin: 0 0 32px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.price__feature {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.price__button {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #02897A;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.price__button--active {
+  background-color: #ffffff;
+  color: #02897A;
 }/*# sourceMappingURL=main.css.map */

@@ -27,6 +27,7 @@ a {
   --body-bg:#fff;
   --body-text:#22343D;
   --logo-text:#173A56;
+   --card-shadow: rgba(0, 0, 0, 0.08);
 }
 .dark-body{
     --body-bg:#1F2E35;
@@ -35,6 +36,7 @@ a {
   .product{
     background-image: url(../img/Bg-dark.png);
   }
+   --card-shadow: rgba(0, 0, 0, 0.2);
 }
 .visually-hidden {
   clip: rect(0 0 0 0);
