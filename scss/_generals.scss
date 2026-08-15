@@ -5,9 +5,12 @@
   margin: 0;
   padding: 0;
 }
-ul,ol{
+
+ul,
+ol {
   list-style: none;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--body-bg);
@@ -33,11 +36,18 @@ a {
     --body-bg:#1F2E35;
   --body-text:#fff;
   --logo-text:#fff;
+   --card-shadow: rgba(0, 0, 0, 0.2);
   .product{
     background-image: url(../img/Bg-dark.png);
   }
-   --card-shadow: rgba(0, 0, 0, 0.2);
+
+  .quick {
+    background-image: url("../../img/black.png");
+  }
 }
+
+
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
