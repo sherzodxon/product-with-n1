@@ -364,12 +364,14 @@ a {
   --body-bg:#fff;
   --body-text:#22343D;
   --logo-text:#173A56;
+  --card-shadow: rgba(0, 0, 0, 0.08);
 }
 
 .dark-body {
   --body-bg:#1F2E35;
   --body-text:#fff;
   --logo-text:#fff;
+  --card-shadow: rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -667,26 +669,6 @@ a {
 }
 .product__btn:hover {
   background-color: #026f63;
-}
-
-:root {
-  --body-bg: #fff;
-  --body-text: #22343D;
-  --logo-text: #173A56;
-  --card-bg: #ffffff;
-  --card-text: #22343D;
-  --card-shadow: rgba(0, 0, 0, 0.08);
-  --period-text: #A6A6A6;
-}
-
-.dark-body {
-  --body-bg: #1F2E35;
-  --body-text: #fff;
-  --logo-text: #fff;
-  --card-bg: #22343D;
-  --card-text: #ffffff;
-  --card-shadow: rgba(0, 0, 0, 0.2);
-  --period-text: #A6A6A6;
 }
 
 .flexbox {
