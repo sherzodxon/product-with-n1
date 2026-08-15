@@ -1,5 +1,5 @@
 .quick__container {
-    background-image: url("../../img/bg.png");
+    background-image: url("../../img/white.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1100px 550px;
@@ -19,7 +19,6 @@
 }
 
 .quick__coment {
-    color: var(--body-text);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -136,7 +135,7 @@
 }
 
 @media only screen and (max-width: 994px) {
-    .quick__slogan{
+    .quick__slogan {
         margin-top: 290px;
     }
 
@@ -146,46 +145,54 @@
     }
 
 }
+
 @media only screen and (max-width: 882px) {
     .quick__coment {
         margin: 0 250px;
         margin-top: 40px;
     }
 }
+
 @media only screen and (max-width: 807px) {
     .quick__coment {
         margin: 0 210px;
         margin-top: 40px;
     }
 }
+
 @media only screen and (max-width: 692px) {
     .quick__coment {
         margin: 0 150px;
         margin-top: 40px;
     }
 }
+
 @media only screen and (max-width: 578px) {
     .quick__coment {
         margin: 0 110px;
         margin-top: 40px;
     }
 }
+
 @media only screen and (max-width: 530px) {
     .quick__coment {
         margin: 0 60px;
         margin-top: 40px;
     }
-    .quick__test{
+
+    .quick__test {
         width: 338px;
 
     }
 }
+
 @media only screen and (max-width: 455px) {
     .quick__coment {
         margin: 0 20px;
         margin-top: 40px;
     }
 }
+
 @media only screen and (max-width: 411px) {
     .quick__coment {
         margin: 0 0px;

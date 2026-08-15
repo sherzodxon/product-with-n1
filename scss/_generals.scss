@@ -5,9 +5,12 @@
   margin: 0;
   padding: 0;
 }
-ul,ol{
+
+ul,
+ol {
   list-style: none;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--body-bg);
@@ -23,16 +26,43 @@ a {
   text-decoration: none;
   color: var(--body-text);
 }
-:root{
-  --body-bg:#fff;
-  --body-text:#22343D;
-  --logo-text:#173A56;
+
+:root {
+  --body-bg: #fff;
+  --body-text: #22343D;
+  --logo-text: #173A56;
 }
-.dark-body{
-    --body-bg:#1F2E35;
-  --body-text:#fff;
-  --logo-text:#fff;
+
+.dark-body {
+  --body-bg: #1F2E35;
+  --body-text: #fff;
+  --logo-text: #fff;
+
+  .quick__container {
+    background-image: url("../../img/black.png");
+  }
+
+  .quick__think--woman {
+    background-color: #fff;
+    color: #1F2E35;
+  }
+
+  .quick__think--boy {
+    background-color: #fff;
+    color: #1F2E35;
+  }
+
+  .quick__think--old {
+    background-color: #fff;
+    color: #1F2E35;
+  }
+
+  .quick__think--man {
+    background-color: #fff;
+    color: #1F2E35;
+  }
 }
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);

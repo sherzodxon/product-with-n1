@@ -340,7 +340,8 @@ template {
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -361,15 +362,34 @@ a {
 }
 
 :root {
-  --body-bg:#fff;
-  --body-text:#22343D;
-  --logo-text:#173A56;
+  --body-bg: #fff;
+  --body-text: #22343D;
+  --logo-text: #173A56;
 }
 
 .dark-body {
-  --body-bg:#1F2E35;
-  --body-text:#fff;
-  --logo-text:#fff;
+  --body-bg: #1F2E35;
+  --body-text: #fff;
+  --logo-text: #fff;
+}
+.dark-body .quick__container {
+  background-image: url("../../img/black.png");
+}
+.dark-body .quick__think--woman {
+  background-color: #fff;
+  color: #1F2E35;
+}
+.dark-body .quick__think--boy {
+  background-color: #fff;
+  color: #1F2E35;
+}
+.dark-body .quick__think--old {
+  background-color: #fff;
+  color: #1F2E35;
+}
+.dark-body .quick__think--man {
+  background-color: #fff;
+  color: #1F2E35;
 }
 
 .visually-hidden {
@@ -551,7 +571,7 @@ a {
   }
 }
 .quick__container {
-  background-image: url("../../img/bg.png");
+  background-image: url("../../img/white.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1100px 550px;
@@ -571,7 +591,6 @@ a {
 }
 
 .quick__coment {
-  color: var(--body-text);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
